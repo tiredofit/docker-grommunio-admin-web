@@ -27,12 +27,11 @@ RUN source /assets/functions/00-container && \
     clone_git_repo ${GROMMUNIO_ADMIN_WEB_REPO_URL} ${GROMMUNIO_ADMIN_WEB_VERSION} && \
     \
     set +e && \
-    if [ -d "/build-assets/src" ] ; then cp -Rp /build-assets/src/* /usr/src/grommunio-web ; fi; \
+    if [ -d "/build-assets/src" ] ; then cp -Rp /build-assets/src/* /usr/src/grommunio-admin-web ; fi; \
     if [ -d "/build-assets/scripts" ] ; then for script in /build-assets/scripts/*.sh; do echo "** Applying $script"; bash $script; done && \ ; fi ; \
     set -e && \
     \
     make && \
-    make dist && \
     \
     ### Setup RootFS
     mkdir -p /rootfs/assets/.changelogs && \
@@ -41,7 +40,7 @@ RUN source /assets/functions/00-container && \
     mkdir -p /rootfs/assets/grommunio/config/admin-web && \
     \
     ### Move files to RootFS
-    cp -Rp dist/* /rootfs/www/grommunio-admin/ && \
+    cp -Rp build/* /rootfs/www/grommunio-admin/ && \
     chown -R ${NGINX_USER}:${NGINX_GROUP} /rootfs/www/grommunio-admin && \
     \
     ### Cleanup and Compress Package

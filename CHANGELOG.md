@@ -1,3 +1,9 @@
+## 1.0.1 2022-10-26 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Stop using make dist and just copy results from build/ to rootfs
+
+
 ## 1.0.0 2022-10-17 <dave at tiredofit dot ca>
 
    ### Added
