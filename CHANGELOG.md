@@ -1,3 +1,9 @@
+## 1.0.6 2024-10-30 <dave at tiredofit dot ca>
+
+   ### Added
+      - Grommunio Admin Web b3e18442b0e783b9bf6e74780e76b06e54a91c67
+
+
 ## 1.0.5 2024-10-30 <dave at tiredofit dot ca>
 
    ### Added

@@ -6,7 +6,7 @@ LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ARG GROMMUNIO_ADMIN_WEB_VERSION
 
-ENV GROMMUNIO_ADMIN_WEB_VERSION=${GROMMUNIO_ADMIN_WEB_VERSION:-"3.1.0"} \
+ENV GROMMUNIO_ADMIN_WEB_VERSION=${GROMMUNIO_ADMIN_WEB_VERSION:-"b3e18442b0e783b9bf6e74780e76b06e54a91c67"} \
     GROMMUNIO_ADMIN_WEB_REPO_URL=${GROMMUNIO_ADMIN_WEB_REPO_URL:-"https://github.com/grommunio/grommunio-admin-web.git"}
 
 COPY build-assets/ /build-assets
