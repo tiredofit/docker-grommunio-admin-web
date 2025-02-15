@@ -1,3 +1,9 @@
+## 1.0.7 2025-02-15 <dave at tiredofit dot ca>
+
+   ### Added
+      - Grommunio Admin Web 4.0.0
+
+
 ## 1.0.6 2024-10-30 <dave at tiredofit dot ca>
 
    ### Added
